@@ -153,7 +153,7 @@
   font-size: 3rem;
 }
 .herocard{
-  padding: 20px 200px;
+  padding: 20px 100px;
   width: 900px;
   height: 250px;
   /* text-align: right; */
@@ -177,7 +177,7 @@ background: -webkit-radial-gradient(circle, hsla(57, 76%, 10%, 1) 0%, hsla(34, 2
 filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#2C2A06", endColorstr="#6F5C43", GradientType=1 );
   display: flex;
   justify-content: center;
-  padding: 70px;
+  padding: 50px;
 }
 .hero-img{
   margin-left: -200px;
@@ -189,19 +189,22 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#2C2A06", en
 }
 
 .name {
-  font-size: 2rem;
-  margin-bottom: 10px;
+  font-size: 2.5rem;
+  margin-bottom: 0px;
 }
 
 .details {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  /* text-align: right !important; */
+  /* margin-right: 0px !important; */
 }
 
 .seating, .manual {
   font-size: 1.2rem;
-  margin-right: 20px; /* Add spacing between seating and manual */
+  margin-left: 10px;
+  /* margin-right: 20px; Add spacing between seating and manual */
 }
 
 .manual {
@@ -211,4 +214,11 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#2C2A06", en
 .rentpd {
   font-size: 1.5rem;
   margin-top: 10px;
+}
+.hero-img{
+  margin-left: 5px;
+}
+.hero-img img{
+  width: 500px !important;
+  height: 300px;
 }
