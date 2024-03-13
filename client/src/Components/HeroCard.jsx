@@ -1,19 +1,18 @@
 import React from "react";
 
-const HeroCard = () => {
+const HeroCard = ({ name, seating, manual, rentpd, imageUrl }) => {
   return (
     <div className="herocard">
       <div className="hero-img">
-        <img
-          src="https://cdn2.rcstatic.com/images/car_images/web/peugeot/5008_lrg.jpg"
-          alt=""
-        />
+        <img src={imageUrl} alt={name} />
       </div>
-      <div className="her-details">
-        <h4 className="name">Peugeot 5008</h4>
-        <h4 className="seating">7 seats</h4>
-        <h4 className="manual">Manual</h4>
-        <h4 className="rentpd">₹21,345.18</h4>
+      <div className="hero-details">
+        <h4 className="name">{name}</h4>
+        <div className="details">
+          <h4 className="seating">{seating}</h4>
+          <h4 className="manual">{manual}</h4>
+        </div>
+        <h4 className="rentpd">{rentpd}</h4>
       </div>
     </div>
   );
