@@ -1,19 +1,26 @@
 
 import './App.css';
-import Display from './Components/Display';
-import Features from './Components/Features';
-import HeroCard from './Components/HeroCard';
-import HeroSection from './Components/HeroSection';
-import Navbar from './Components/Navbar';
-
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './Pages/Home';
+import About from './Pages/About';
+import Contact from './Pages/Contact';
+import Locations from './Pages/Locations';
+import Login from './Pages/Login';
+import Vehicles from './Pages/Vehicles';
 function App() {
   
   return (
     <div className="App">
-      <Navbar/>
-      <HeroSection/>
-      <Features/>
-      <Display/>
+     <Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/location" element={<Locations />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/Vehicles" element={<Vehicles />} />
+        </Routes>
+      </Router>
     </div>
   );
 }
