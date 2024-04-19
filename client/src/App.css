@@ -46,6 +46,8 @@
   /* background-image: url("https://images.unsplash.com/photo-1638360339238-e7f73f9b6df8?q=80&w=1946&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); */
   background-image: url("https://images.unsplash.com/photo-1625037669880-959e0b2f4410?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
   width: 100vw;
+  background-size: cover;
+  background-position: center !important;
   /* background-position: aut; */
   height: calc(100vh - 80px);
   /* Subtract navbar height from viewport height */
